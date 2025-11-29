@@ -1,7 +1,6 @@
 Exercice 1:
 
-<img width="1076" height="399" alt="image" src="https://github.com/user-attachments/assets/822b656a-76aa-4a4a-beca-bc5c50288ee1" />
-
+<img width="984" height="327" alt="image" src="https://github.com/user-attachments/assets/1bae06ec-235a-498d-8f63-89e717ca9358" />
 
 Exercice 2:
 
