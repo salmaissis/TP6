@@ -1,0 +1,21 @@
+package exercice_3;
+
+public abstract class Personne {
+	protected final String nom;
+    protected final double salaireBase;
+
+    public Personne(String nom, double salaireBase) {
+        this.nom = nom;
+        this.salaireBase = salaireBase;
+    }
+
+    public abstract double calculerSalaire();
+    
+    public void affiche() {
+        System.out.printf(
+            "Je suis %s,mon salaire est %.1f DH %n",
+            nom, calculerSalaire()
+        );
+    }
+
+}
