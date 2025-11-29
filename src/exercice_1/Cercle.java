@@ -1,17 +1,16 @@
 package exercice_1;
 
 public class Cercle extends Forme {
-private double rayon;
-	public Cercle(double rayon) {
+	private double rayon;
+
+	public Cercle(String couleur, double rayon) {
+		super(couleur);
 		this.rayon = rayon;
 	}
+
 	@Override
-	double getSurface() {
-		return Math.PI * Math.pow(rayon, 2);
-	}
-	@Override
-	public String toString() {
-		return "la surface du cercle est" + rayon;
+	public void dessiner() {
+		System.out.println("Dessiner un cercle de couleur " + couleur + " et de rayon " + rayon);
 	}
 
 }

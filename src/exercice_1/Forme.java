@@ -1,7 +1,15 @@
 package exercice_1;
 
-public abstract class Forme {
+public class Forme {
 
-	abstract double getSurface();
+	protected String couleur;
+
+    public Forme(String couleur) {
+        this.couleur = couleur;
+    }
+    
+    public void dessiner() {
+        System.out.println("Dessiner une forme de couleur " + couleur);
+    }
 
 }

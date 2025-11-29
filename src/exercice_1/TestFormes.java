@@ -1,12 +1,16 @@
 package exercice_1;
 
 public class TestFormes {
-	public static void main(String[] argv) {
-		Forme[] figures = new Forme[3];
-		figures[0] = new Carre(2);
-		figures[1] = new Cercle(3);
-		figures[2] = new Carre(5.2);
-		for (int i = 0; i < figures.length; i++)
-			System.out.println(figures[i] + " : surface = " + figures[i].getSurface() + "cm2");
-	}
+	public static void main(String[] args) {
+        Forme[] formes = new Forme[] {
+            new Cercle("Rouge",   5.0),
+            new Rectangle("Bleu", 4.0, 3.0),
+            new Triangle("Vert",  6.0, 2.5),
+            new Forme("Noir")
+        };
+
+        for (Forme f : formes) {
+            f.dessiner();
+        }
+    }
 }
